@@ -1,0 +1,182 @@
+/* Reset básico para mejorar la apariencia en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+/* Centrar el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+main {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Mejoramos el diseño del header */
+header {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    /* Estilo del encabezado */
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Secciones en un layout más estructurado */
+section {
+    text-align: left;
+}
+
+/* Contacto con diseño en columnas */
+#contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacto ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Sección de proyectos */
+#proyectos, #contacto {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos h2, #contacto h2 {
+    color: #007bff;
+}
+
+/* Enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    main {
+        max-width: 90%;
+    }
+}
+
+/* Botón de cambio de modo */
+#modo-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#modo-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Modo oscuro */
+.oscuro {
+    background-color: #121212;
+    color: white;
+}
+
+.oscuro header {
+    background-color: #1e1e1e;
+}
+
+.oscuro #modo-btn {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.oscuro #modo-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.oscuro section {
+    background-color: #222;
+    color: white;
+}
+
+.oscuro footer {
+    color: #bbb;
+}
+/* Estilo de la sección "Sobre mí" */
+#sobre-mi {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#sobre-mi h2 {
+    color: #007bff;
+}
