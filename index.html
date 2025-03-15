@@ -4,59 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    
     <header>
         <img src="perfil.jpg" alt="Foto de perfil" class="perfil">
         <h1>Tu Nombre</h1>
         <p>Desarrolladora Web en formación</p>
         <button id="modo-btn">🌙 Modo Oscuro</button>
-
     </header>
 
     <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy una apasionada del desarrollo web en formación. Estoy aprendiendo a crear aplicaciones modernas y funcionales.</p>
+        <div class="container">
+            <h2><i class="fas fa-user"></i> Sobre mí</h2>
+            <p>Soy una apasionada del desarrollo web en formación. Estoy aprendiendo a crear aplicaciones modernas y funcionales.</p>
+        </div>
     </section>
     
     <main>
         <section id="proyectos">
-            <h2>Mis Proyectos</h2>
-            <p>Aquí irán los proyectos que desarrollemos.</p>
+
+            <div class="container">
+
+                <h2><i class="fas fa-code"></i> Mis Proyectos</h2>
+                <p>Aquí irán los proyectos que desarrollemos.</p>
+
+                <div class="proyectos-grid">
+
+                    <div class="proyecto">
+                        <div class="proyecto">
+                            <img src="proyecto1/proyecto1.jpg" alt="Proyecto 1">
+                            <h3><i class="fas fa-laptop-code"></i> Proyecto 1</h3>
+                            <p>Descripción breve del proyecto.</p>
+                            
+                            <a href="proyecto1/index.html" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Ver Proyecto
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+            
+                    <div class="proyecto">
+                        <img src="proyecto2.jpg" alt="Proyecto 2">
+                        <h3><i class="fas fa-laptop-code"></i> Proyecto 2</h3>
+                        <p>Descripción breve de este proyecto.</p>
+                        <a href="https://github.com/TU-USUARIO/proyecto2" target="_blank"><i class="fab fa-github"></i> Ver en GitHubb</a>
+                    </div>
+            
+                    <div class="proyecto">
+                        <img src="proyecto3.jpg" alt="Proyecto 3">
+                        <h3><i class="fas fa-laptop-code"></i> Proyecto 3</h3>
+                        <p>Descripción breve de este proyecto.</p>
+                        <a href="https://github.com/TU-USUARIO/proyecto3" target="_blank"><i class="fab fa-github"></i>Ver en GitHub</a>
+                    </div>
+
+                </div>
+                
+            </div>
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Si quieres ponerte en contacto conmigo, llena este formulario:</p>
-            
-            <form id="formulario-contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <div class="container">
+                <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                <p>Si quieres ponerte en contacto conmigo, llena este formulario:</p>
+                
+                <form id="formulario-contacto">
+                    <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <button type="submit"><i class="fas fa-paper-plane"></i>Enviar</button>
+                </form>
 
-            <p id="mensaje-exito" style="display: none; color: green; margin-top: 10px;">
-                ✅ ¡Mensaje enviado con éxito!
-            </p>
-            <p>Puedes encontrarme en:</p>
-            <ul>
-                <li><a href="https://github.com/TU-USUARIO" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/TU-USUARIO" target="_blank">LinkedIn</a></li>
-            </ul>
+                <p id="mensaje-exito" style="display: none; color: green; margin-top: 10px;">
+                    ✅ ¡Mensaje enviado con éxito!
+                </p>
+                <p>Puedes encontrarme en:</p>
+                <ul>
+                    <li><a href="https://github.com/TU-USUARIO" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/TU-USUARIO" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>© 2025 - Mi Landing Page</p>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
